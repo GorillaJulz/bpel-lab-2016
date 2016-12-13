@@ -58,9 +58,7 @@
             <element name="Costs">
                 <complexType>
                     <sequence>
-                        <element name="PaymentCosts" type="decimal"/>
-                        <element name="ShipmentCosts" type="decimal"/>
-                        <element name="OrderCosts" type="decimal"/>
+                        <element name="input" type="tns:PaymentCosts"/>
                     </sequence>
                 </complexType>
             </element>
@@ -127,9 +125,6 @@
     </message>
     <message name="conductorderResponseMessage">
         <part element="tns:conductorderResponse" name="payload"/>
-    </message>
-    <message name="CostsMessage">
-        <part element="tns:Costs" name="toPay"/>
     </message>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

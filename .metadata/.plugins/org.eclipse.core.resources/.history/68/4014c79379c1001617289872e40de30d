@@ -374,14 +374,6 @@
                     <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:amount]]></bpel:query>
                 </bpel:to>
             </bpel:copy>
-            <bpel:copy>
-                <bpel:from part="payload" variable="input">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:input/tns:orderID]]></bpel:query>
-                </bpel:from>
-                <bpel:to part="conductPaymentInput" variable="PaymentServicePLRequest1">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:orderId]]></bpel:query>
-                </bpel:to>
-            </bpel:copy>
         </bpel:assign>
         <bpel:invoke name="Payment" partnerLink="PaymentServicePL" operation="conductPayment" portType="ns:PaymentPortType" inputVariable="PaymentServicePLRequest1" outputVariable="PaymentServicePLResponse1"></bpel:invoke>
         <bpel:assign validate="no" name="AssignDetails">
