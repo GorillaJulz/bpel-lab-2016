@@ -22,7 +22,7 @@
   </extensions>
   <extensions>
     <extendedObject href="conductorder.bpel#/"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1481662107000" processName="{julz.babis}conductorder" processVersion="5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1481662107000" processName="{julz.babis}conductorder" processVersion="4"/>
   </extensions>
   <extensions>
     <extendedObject href="conductorder.bpel#//@activity/@activities.1/@activity/@activity/@activities.1"/>

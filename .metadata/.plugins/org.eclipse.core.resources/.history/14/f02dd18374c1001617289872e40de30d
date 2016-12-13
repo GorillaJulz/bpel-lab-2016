@@ -46,14 +46,6 @@
                     </sequence>
                 </complexType>
             </element>
-            
-            <element name="PaymentCosts">
-                <complexType>
-                    <sequence>
-                        <element name="input" type="decimal"/>
-                    </sequence>
-                </complexType>
-            </element>
 
 			<complexType name="orderInput">
 			        <sequence>

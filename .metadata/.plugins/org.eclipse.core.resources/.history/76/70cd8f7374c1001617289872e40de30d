@@ -34,23 +34,7 @@
             <element name="OrderCosts">
                 <complexType>
                     <sequence>
-                        <element name="input" type="decimal"/>
-                    </sequence>
-                </complexType>
-            </element>
-            
-            <element name="ShipmentCosts">
-                <complexType>
-                    <sequence>
-                        <element name="input" type="decimal"/>
-                    </sequence>
-                </complexType>
-            </element>
-            
-            <element name="PaymentCosts">
-                <complexType>
-                    <sequence>
-                        <element name="input" type="decimal"/>
+                        <element name="input" type="tns:orderInput"/>
                     </sequence>
                 </complexType>
             </element>
