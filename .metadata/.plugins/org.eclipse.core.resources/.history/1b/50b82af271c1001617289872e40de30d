@@ -221,41 +221,8 @@
             </bpel:copy>
         </bpel:assign>
         <bpel:invoke name="SaveOrderDetails" partnerLink="OrderServicePL" operation="storeOrderDetails" portType="ns:OrderPortType" inputVariable="OrderServicePLRequest" outputVariable="OrderServicePLResponse"></bpel:invoke>
-        <bpel:assign validate="no" name="Assign">
-            <bpel:copy>
-                <bpel:from><bpel:literal><FlowSOG:getOrderDetails xmlns:FlowSOG="http://iaas.uni-stuttgart.de/labs/FlowSOG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <FlowSOG:orderId>FlowSOG:orderId</FlowSOG:orderId>
-</FlowSOG:getOrderDetails>
-</bpel:literal></bpel:from>
-                <bpel:to variable="OrderServicePLRequest1" part="getOrderDetailsInput"></bpel:to>
-            </bpel:copy>
-            <bpel:copy>
-                <bpel:from part="getOrderDetailsInput" variable="OrderServicePLRequest1">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:orderId]]></bpel:query>
-                </bpel:from>
-                <bpel:to part="getOrderDetailsInput" variable="OrderServicePLRequest1">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:orderId]]></bpel:query>
-                </bpel:to>
-            </bpel:copy>
-        </bpel:assign>
         <bpel:invoke name="getOrderDetails" partnerLink="OrderServicePL" operation="getOrderDetails" portType="ns:OrderPortType" inputVariable="OrderServicePLRequest1" outputVariable="OrderServicePLResponse1"></bpel:invoke>
-        <bpel:assign validate="no" name="AssignDetails">
-            <bpel:copy>
-                <bpel:from><bpel:literal><tns:conductorderResponse xmlns:tns="julz.babis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <tns:result>tns:result</tns:result>
-</tns:conductorderResponse>
-</bpel:literal></bpel:from>
-                <bpel:to variable="output" part="payload"></bpel:to>
-            </bpel:copy>
-            <bpel:copy>
-                <bpel:from part="getOrderDetailsOutput" variable="OrderServicePLResponse1">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:customerId]]></bpel:query>
-                </bpel:from>
-                <bpel:to part="payload" variable="output">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
-                </bpel:to>
-            </bpel:copy>
-        </bpel:assign>
+        <bpel:assign validate="no" name="AssignDetails"></bpel:assign>
         <bpel:reply name="replyOutput" partnerLink="client" portType="tns:conductorder" operation="process" variable="output" />
     </bpel:sequence>
 </bpel:process>

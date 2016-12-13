@@ -16,9 +16,6 @@
     <plnk:partnerLinkType name="ShipmentServicePL">
     <plnk:role name="ShipmentServicePLRole" portType="wsdl:ShipmentPortType"/>
   </plnk:partnerLinkType>
-    <plnk:partnerLinkType name="PaymentServicePL">
-    <plnk:role name="PaymentServicePLRole" portType="wsdl:PaymentPortType"/>
-  </plnk:partnerLinkType>
     <import location="bpmlab16.wsdl" namespace="http://iaas.uni-stuttgart.de/labs/FlowSOG"/>
     <types>
         <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="julz.babis">
