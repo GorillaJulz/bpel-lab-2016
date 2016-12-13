@@ -1,6 +1,7 @@
-#Tue Dec 13 21:13:22 CET 2016
+#Tue Dec 13 22:31:07 CET 2016
 useQuickDiffPrefPage=true
 tabWidthPropagated=true
+proposalOrderMigrated=true
 useAnnotationsPrefPage=true
 org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
 org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
