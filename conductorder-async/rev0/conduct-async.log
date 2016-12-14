@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bplog:Log xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bplog="http://simtech.de/bpel/logging" processModelName="conduct-async" processModelPath="/Users/Lijan/Development/bpel-sucks/conductorder-async/rev0/conduct-async.bpel">
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T18:58:23.806+0100">
+    <parentElement elementType="sequence" elementName="main" elementXPath="/process/sequence[1]"/>
+    <oldElement elementType="empty" elementName="FIX_ME-Add_Business_Logic_Here" elementXPath="/process/sequence[1]/empty[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:16.697+0100">
+    <parentElement elementType="sequence" elementName="main" elementXPath="/process/sequence[1]"/>
+    <newElement elementType="flow" elementName="" elementXPath="/process/sequence[1]/flow[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T18:59:16.714+0100">
+    <containingElement elementType="flow" elementName="" elementXPath="/process/sequence[1]/flow[1]"/>
+    <attribute attributeName="name" oldValue="" newValue="Flow"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T18:59:22.489+0100">
+    <containingElement elementType="flow" elementName="Flow" elementXPath="/process/sequence[1]/flow[1]"/>
+    <attribute attributeName="name" oldValue="Flow" newValue="Async"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:32.737+0100">
+    <parentElement elementType="flow" elementName="Async" elementXPath="/process/sequence[1]/flow[1]"/>
+    <newElement elementType="scope" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:32.737+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="VariablesImpl" elementXPath="null/variables[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:32.737+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="CorrelationSetsImpl" elementXPath="null/correlationSets[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:32.737+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="PartnerLinksImpl" elementXPath="null/partnerLinks[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:32.737+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="MessageExchangesImpl" elementXPath="null/messageExchanges[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T18:59:32.738+0100">
+    <containingElement elementType="scope" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]"/>
+    <attribute attributeName="name" oldValue="" newValue="Scope"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T18:59:45.008+0100">
+    <containingElement elementType="scope" elementName="Scope" elementXPath="/process/sequence[1]/flow[1]/scope[1]"/>
+    <attribute attributeName="name" oldValue="Scope" newValue="Order"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:48.242+0100">
+    <parentElement elementType="flow" elementName="Async" elementXPath="/process/sequence[1]/flow[1]"/>
+    <newElement elementType="scope" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:48.242+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="VariablesImpl" elementXPath="null/variables[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:48.243+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="CorrelationSetsImpl" elementXPath="null/correlationSets[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:48.243+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="PartnerLinksImpl" elementXPath="null/partnerLinks[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T18:59:48.243+0100">
+    <parentElement elementType="scope" elementName=""/>
+    <newElement elementType="MessageExchangesImpl" elementXPath="null/messageExchanges[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T18:59:48.244+0100">
+    <containingElement elementType="scope" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[2]"/>
+    <attribute attributeName="name" oldValue="" newValue="Scope"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T18:59:54.935+0100">
+    <containingElement elementType="scope" elementName="Scope" elementXPath="/process/sequence[1]/flow[1]/scope[2]"/>
+    <attribute attributeName="name" oldValue="Scope" newValue="CheckAvailability"/>
+  </modelChange>
+</bplog:Log>
