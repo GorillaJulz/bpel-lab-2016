@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="julz.babis" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:wsdl="http://iaas.uni-stuttgart.de/labs/FlowSOG" name="conductorder" targetNamespace="julz.babis">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="julz.babis" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:wsdl="http://iaas.uni-stuttgart.de/labs/FlowSOG" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="conductorder" targetNamespace="julz.babis">
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      TYPE DEFINITION - List of types participating in this BPEL process 
@@ -24,6 +24,22 @@
   </plnk:partnerLinkType>
     <plnk:partnerLinkType name="InventoryCallbackPL">
     <plnk:role name="InventoryCallbackPL" portType="wsdl:InventoryCallbackPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="InventoryCallbackPL2">
+    <plnk:role name="InventoryCallbackPL2Role" portType="wsdl:InventoryPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="inventoryCallbackPL3">
+    <plnk:role name="inventoryCallback3PLRole" portType="wsdl:InventoryCallbackPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="InventoryCallbackReceiver">
+    <plnk:role name="thereceiver" portType="wsdl:InventoryCallbackPortType"/>
+  </plnk:partnerLinkType>
+    <vprop:property name="customerId" type="xsd:string"/>
+    <vprop:propertyAlias messageType="wsdl:onFinishCheckAvailabilityInput" part="onFinishCheckAvailabilityInput" propertyName="tns:customerId">
+    <vprop:query><![CDATA[/wsdl:customerId]]></vprop:query>
+  </vprop:propertyAlias>
+    <plnk:partnerLinkType name="callbackLT">
+    <plnk:role name="callbackReceiver" portType="wsdl:InventoryCallbackPortType"/>
   </plnk:partnerLinkType>
     <import location="bpmlab16.wsdl" namespace="http://iaas.uni-stuttgart.de/labs/FlowSOG"/>
     <types>
@@ -73,7 +89,7 @@
          
          	<complexType name="productList">
 		        <sequence>
-		          <element name="productId" type="string" minOccurs="0" maxOccurs="unbounded"/>
+		          <element maxOccurs="unbounded" minOccurs="0" name="productId" type="string"/>
 		        </sequence>
 		        <anyAttribute/>
 		    </complexType>
@@ -125,10 +141,9 @@
 			<element name="checkAvailabilityAsync">
 				<complexType>
 					<sequence>
-						<element name="callbackUrl" type="string" />
-						<element name="customerId" type="string" />
-						<element name="productId" type="string" minOccurs="1"
-							maxOccurs="unbounded" />
+						<element name="callbackUrl" type="string"/>
+						<element name="customerId" type="string"/>
+						<element maxOccurs="unbounded" minOccurs="1" name="productId" type="string"/>
 					</sequence>
 				</complexType>
 			</element>

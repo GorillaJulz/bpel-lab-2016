@@ -229,6 +229,7 @@
 <view id="org.eclipse.bpel.ui.simtech.auditingView"/>
 <view id="org.eclipse.bpel.ui.agora.debug.views.breakpointManagement"/>
 <view id="org.eclipse.apache.ode.processManagement.view"/>
+<view id="org.eclipse.pde.runtime.LogView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -251,16 +252,18 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.17985612" ratioLeft="225" ratioRight="1026" relationship="2" relative="bpel.left"/>
 <info folder="true" part="bpel.bottom" ratio="0.5457413" ratioLeft="346" ratioRight="288" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.pde.runtime.LogView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.bpel.ui.simtech.auditingView" label="SimTech Auditing"/>
 <page content="org.eclipse.bpel.ui.agora.debug.views.breakpointManagement" label="Breakpoint Management"/>
 <page content="org.eclipse.apache.ode.processManagement.view" label="ODE Process Management View"/>
+<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -281,152 +284,151 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.bpel.contenttype" path="/conductOrderAsync/rev0/conductorder.bpel"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/conductOrderAsync/rev0/conductorderArtifacts.wsdl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.bpel.ui.bpeleditor" path="/conductOrderAsync/rev0/conductorder.bpel"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/conductOrderAsync/rev0/conductorderArtifacts.wsdl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.bpel.ui.bpeleditor" path="/conductOrderAsync/rev0/conductorder.bpel"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/conductOrderAsync/rev0/conductorderArtifacts.wsdl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.bpel.apache.ode.deploy.ui.editors.ODEDeployMultiPageEditor" path="/conductOrderAsync/rev0/deploy.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.bpel.ui.bpeleditor" path="/conductOrderAsync/rev0/conductorder.bpel"/>
 </editors>
 <item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5960" y="0"/>
+<position/>
 </item>
 <item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="7232" y="0"/>
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5938" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="6429" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="6481" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8498" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="6481" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8498" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="6481" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8703" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8703" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="6481" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8703" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8918" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="9144" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8703" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5878" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5876" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="8701" y="0"/>
+</item>
+<item historyLabel="conductorder.bpel" index="0">
+<position info="not_deleted" x="5876" y="0"/>
 </item>
 <item historyLabel="conductorderArtifacts.wsdl" index="1"/>
-<item historyLabel="conductorder.bpel" index="2"/>
+<item historyLabel="deploy.xml" index="2"/>
 <item historyLabel="conductorderArtifacts.wsdl" index="1"/>
-<item historyLabel="conductorder.bpel" index="2">
-<position info="not_deleted" x="7232" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="8968" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5960" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="10997" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="8968" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5960" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5907" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="8968" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5960" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="8968" y="0"/>
-</item>
-<item historyLabel="conductorderArtifacts.wsdl" index="3"/>
-<item historyLabel="conductorder.bpel" index="4">
-<position info="not_deleted" x="8968" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5960" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="8968" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="10966" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="12687" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="10966" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5907" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="10966" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="7252" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="7676" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="9785" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="7676" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5955" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="12044" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="5955" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="12044" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="11823" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="12044" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="7676" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="15272" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="9785" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="6011" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="9785" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="11823" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="6011" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="12044" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="9785" y="0"/>
-</item>
-<item historyLabel="conductorderArtifacts.wsdl" index="5"/>
-<item historyLabel="conductorder.bpel" index="6">
-<position/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="9785" y="0"/>
-</item>
-<item historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="11823" y="0"/>
-</item>
-<item active="true" historyLabel="conductorder.bpel" index="0">
-<position info="not_deleted" x="9806" y="0"/>
-</item>
+<item active="true" historyLabel="conductorder.bpel" index="3"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>

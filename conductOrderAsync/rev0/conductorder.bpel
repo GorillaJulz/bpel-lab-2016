@@ -5,7 +5,7 @@
          suppressJoinFailure="yes"
          xmlns:tns="julz.babis"
          xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
-         xmlns:ns="http://iaas.uni-stuttgart.de/labs/FlowSOG">
+         xmlns:ns="http://iaas.uni-stuttgart.de/labs/FlowSOG" xmlns:ns1="http://www.w3.org/2001/XMLSchema">
 
     <!-- Import the client WSDL -->
     <bpel:import namespace="http://iaas.uni-stuttgart.de/labs/FlowSOG" location="bpmlab16.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"></bpel:import>
@@ -28,7 +28,8 @@
         <bpel:partnerLink name="PaymentServicePL" partnerLinkType="tns:PaymentServicePL" partnerRole="PaymentServicePLRole"></bpel:partnerLink>
         
         
-        <bpel:partnerLink name="inventoryCallbackPL" partnerLinkType="tns:InventoryCallbackPL" myRole="InventoryCallbackPL"></bpel:partnerLink>
+        <bpel:partnerLink name="inventoryCallbackPL" partnerLinkType="tns:InventoryCallbackReceiver" myRole="thereceiver"></bpel:partnerLink>
+        <bpel:partnerLink name="CallbackLT" partnerLinkType="tns:callbackLT" myRole="callbackReceiver"></bpel:partnerLink>
     </bpel:partnerLinks>
   
     <!-- ================================================================= -->         
@@ -73,6 +74,9 @@
     <!-- Set of activities coordinating the flow of messages across the    -->
     <!-- services integrated within this business process                  -->
     <!-- ================================================================= -->         
+    <bpel:correlationSets>
+        <bpel:correlationSet name="customerId" properties="tns:customerId"></bpel:correlationSet>
+    </bpel:correlationSets>
     <bpel:sequence name="main"><!-- Receive input from requester. 
              Note: This maps to operation defined in conductorder.wsdl 
              -->
@@ -81,102 +85,48 @@
         <!-- Generate reply to synchronous request -->
         
         <bpel:flow name="Async"><bpel:scope name="CheckAvailabilty">
-                <bpel:sequence name="Availability">
-                    
-                    
-                    
-                    <bpel:forEach parallel="no" counterName="countervar" name="ForEach">
-                        <bpel:startCounterValue>
-                            <![CDATA[1]]>
-                        </bpel:startCounterValue>
-                        <bpel:finalCounterValue><![CDATA[count($input.payload/tns:input/tns:productIdList/tns:productId)]]></bpel:finalCounterValue>
-                        <bpel:scope>
-                            <bpel:assign validate="no" name="AssignProductIds">
-                                <bpel:copy>
-                                    <bpel:from><bpel:literal><tns:conductorderResponse xmlns:tns="julz.babis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <tns:result>tns:result</tns:result>
-</tns:conductorderResponse>
-</bpel:literal></bpel:from>
-                                    <bpel:to variable="output" part="payload"></bpel:to>
-                                </bpel:copy>
-                                <bpel:copy>
-                                    <bpel:from>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <![CDATA[ode:insert-as-last-into($InventoryServicePLRequest1.checkAvailabilityAsyncInput/ns:productId, $input.payload/tns:input/tns:productIdList/tns:productId[round($countervar)]))]]>
-                                    </bpel:from>
-                                    <bpel:to part="payload" variable="output">
-                                        <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
-                                    </bpel:to>
-                                </bpel:copy>
-                                <bpel:copy>
-                                    <bpel:from>
-                                        
-                                        <![CDATA[$input.payload/tns:input/tns:productIdList/tns:productId[round($countervar)]]]>
-                                    </bpel:from>
-                                    <bpel:to>
-                                        <![CDATA[$InventoryServicePLRequest1.checkAvailabilityAsyncInput/ns:productId[round($countervar)]]]>
-                                    </bpel:to>
-                                </bpel:copy>
-                            </bpel:assign>
-                        </bpel:scope>
-                    </bpel:forEach>
-                    
-                    
-                    
-                    
-                    
-                    <bpel:invoke name="checkAvailabilityAsync" partnerLink="InventoryServicePL" operation="checkAvailabilityAsync" portType="ns:InventoryPortType" inputVariable="InventoryServicePLRequest1"></bpel:invoke>
-                    <bpel:receive name="callback" partnerLink="inventoryCallbackPL" operation="onFinishCheckAvailability" portType="ns:InventoryCallbackPortType" variable="inventoryCallbackPLRequest"></bpel:receive>
-                    <bpel:forEach parallel="no" counterName="index" name="ForEachProduct">
-            <bpel:startCounterValue><![CDATA[1]]></bpel:startCounterValue>
-            <bpel:finalCounterValue><![CDATA[count($input.payload/tns:input/tns:products/tns:product)]]></bpel:finalCounterValue>
-<!--             <bpel:completionCondition></bpel:completionCondition> -->
-            <bpel:scope name="SomeScope">
-                <bpel:sequence name="Sequence">
-                    <bpel:assign validate="no" name="AssignOrderID"><bpel:copy>
-                <bpel:from><bpel:literal><FlowSOG:checkAvailability xmlns:FlowSOG="http://iaas.uni-stuttgart.de/labs/FlowSOG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <FlowSOG:productId>FlowSOG:productId</FlowSOG:productId>
-</FlowSOG:checkAvailability>
-</bpel:literal></bpel:from>
-                <bpel:to variable="InventoryServicePLRequest" part="checkAvailabilityInput"></bpel:to>
-            </bpel:copy>
-            <bpel:copy>
-                <bpel:from part="payload" variable="input">
-                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                                    <![CDATA[tns:input/tns:products/tns:product/tns:productID]]>
-                                </bpel:query>
-                            </bpel:from>
-                <bpel:to part="checkAvailabilityInput" variable="InventoryServicePLRequest">
-                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                                    <![CDATA[ns:productId]]>
-                                </bpel:query>
-                            </bpel:to>
-            </bpel:copy>
-        
-        </bpel:assign>
-                    <bpel:invoke name="checkAvailability" partnerLink="InventoryServicePL" operation="checkAvailability" portType="ns:InventoryPortType" inputVariable="InventoryServicePLRequest" outputVariable="InventoryServicePLResponse"></bpel:invoke>
-                    
-                    
-                    
-                    
-                    <bpel:if name="IfProductNotAvailable">
-                        <bpel:condition><![CDATA[$InventoryServicePLResponse.checkAvailabilityOutput/ns:product/ns:status/ns:currentAvailability = "not available"]]></bpel:condition>
-                        <bpel:exit name="Exit"></bpel:exit>
-                    </bpel:if>
-                </bpel:sequence>
-            </bpel:scope>
-        </bpel:forEach>
-                </bpel:sequence>
                 <bpel:variables>
                     <bpel:variable name="InventoryServicePLRequest1" messageType="ns:checkAvailabilityAsyncInput"></bpel:variable>
                     <bpel:variable name="InventoryServicePLRequest3" element="ns:checkAvailabilityAsync"></bpel:variable>
                    
                     <bpel:variable name="inventoryCallbackPLRequest" messageType="ns:onFinishCheckAvailabilityInput"></bpel:variable>
                 </bpel:variables>
+                <bpel:sequence name="Sequence">
+                    <bpel:assign validate="no" name="Assign">
+                        <bpel:copy>
+                            <bpel:from><bpel:literal><FlowSOG:checkAvailabilityAsync xmlns:FlowSOG="http://iaas.uni-stuttgart.de/labs/FlowSOG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FlowSOG:callbackUrl>FlowSOG:callbackUrl</FlowSOG:callbackUrl>
+  <FlowSOG:customerId>FlowSOG:customerId</FlowSOG:customerId>
+  <FlowSOG:productId>FlowSOG:productId</FlowSOG:productId>
+</FlowSOG:checkAvailabilityAsync>
+</bpel:literal></bpel:from>
+                            <bpel:to variable="InventoryServicePLRequest1" part="checkAvailabilityAsyncInput"></bpel:to>
+                        </bpel:copy>
+                        <bpel:copy>
+                            <bpel:from part="payload" variable="input">
+                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:input/tns:callbackURL]]></bpel:query>
+                            </bpel:from>
+                            <bpel:to part="checkAvailabilityAsyncInput" variable="InventoryServicePLRequest1">
+                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:callbackUrl]]></bpel:query>
+                            </bpel:to>
+                        </bpel:copy>
+                        <bpel:copy>
+                            <bpel:from part="payload" variable="input">
+                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:input/tns:customerID]]></bpel:query>
+                            </bpel:from>
+                            <bpel:to part="checkAvailabilityAsyncInput" variable="InventoryServicePLRequest1">
+                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[ns:customerId]]></bpel:query>
+                            </bpel:to>
+                        </bpel:copy>
+                    </bpel:assign>
+                    <bpel:invoke name="Invoke" partnerLink="InventoryServicePL" operation="checkAvailabilityAsync" portType="ns:InventoryPortType" inputVariable="InventoryServicePLRequest1"></bpel:invoke>
+                    <bpel:receive name="Receive" partnerLink="inventoryCallbackPL" operation="onFinishCheckAvailability" portType="ns:InventoryCallbackPortType" variable="inventoryCallbackPLRequest">
+                    </bpel:receive>
+                    <bpel:if name="If">
+                        <bpel:condition><![CDATA[$inventoryCallbackPLRequest.onFinishCheckAvailabilityInput/ns:productList/ns:product/ns:status = "not available"]]></bpel:condition>
+                        <bpel:exit name="Exit"></bpel:exit>
+                    </bpel:if>
+                </bpel:sequence>
             </bpel:scope><bpel:scope name="Order">
                 <bpel:sequence>
                     <bpel:assign validate="no" name="AssignOrder">
