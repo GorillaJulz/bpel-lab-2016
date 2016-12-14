@@ -8688,4 +8688,696 @@
     <containingElement elementType="to" elementName=""/>
     <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
   </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.876+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.876+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.877+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.877+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.877+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.877+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.878+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.878+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.878+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:36.878+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:52.665+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:52.667+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:49:52.668+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:49:58.808+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:49:58.832+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:49:58.842+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:17.311+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:17.314+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:17.317+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:17.320+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:17.343+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:21.043+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:21.045+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:21.046+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:21.047+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue="" newValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:21.057+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:22.446+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:22.458+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:22.467+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:50:22.488+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:22.488+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:50:22.500+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:22.500+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:39.959+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <newElement elementType="assign" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:39.971+0100">
+    <containingElement elementType="assign" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <attribute attributeName="name" oldValue="" newValue="Assign"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:46.826+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:46.836+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:50:46.846+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:51.852+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:51.853+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:51.854+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:51.854+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:51.860+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:54.783+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:54.784+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:54.784+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:54.785+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue="" newValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:50:54.791+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:14.554+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:14.566+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:14.574+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:23.210+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:23.210+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:23.211+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:23.212+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:23.225+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:24.823+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:24.823+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:24.824+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:24.825+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue="" newValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:51:24.831+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:26.143+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:26.153+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:26.162+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:51:26.176+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:26.176+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:51:26.184+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:51:26.184+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:59:31.258+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:59:31.258+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:59:31.258+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:46.452+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="variable" oldValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:46.461+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="part" oldValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:46.466+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:46.475+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:46.480+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:52.686+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="variable" oldValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:52.696+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="part" oldValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:52.701+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:52.710+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T21:59:52.715+0100">
+    <containingElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:59:57.950+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:59:57.961+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:59:57.969+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:59:57.981+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:59:57.981+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T21:59:57.987+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T21:59:57.987+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.268+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.268+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.268+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.268+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.270+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.270+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.272+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.273+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.274+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:04:12.274+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[3]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[2]/copy[2]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.663+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.663+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.664+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.666+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.668+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.668+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:09:47.668+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.742+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <newElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.742+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.742+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.742+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.742+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.742+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <newElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:09:47.743+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <newElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:35.541+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:35.550+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:35.554+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:35.561+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:35.565+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:48.732+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:48.741+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:48.747+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:48.799+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:12:48.804+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:39.669+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="invoke" elementName="Invoke" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.402+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.402+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.402+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.402+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.404+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.404+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:13:48.404+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.486+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <newElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.486+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.486+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.486+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.486+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.486+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <newElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:13:48.487+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <newElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.744+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.744+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.744+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.744+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.746+0100">
+    <parentElement elementType="assign" elementName="InitCheckAvailaibilty" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.746+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:10.746+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:25.123+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <newElement elementType="assign" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:25.130+0100">
+    <containingElement elementType="assign" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <attribute attributeName="name" oldValue="" newValue="Assign"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:28.830+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:28.851+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:28.874+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:46.196+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:46.197+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:46.198+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:46.199+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="part" oldValue="" newValue="payload"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:46.203+0100">
+    <containingElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+    <attribute attributeName="variable" oldValue="" newValue="input"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:47.454+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:47.455+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:47.455+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="property" oldValue=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:47.456+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="part" oldValue="" newValue="checkAvailabilityAsyncInput"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-14T22:15:47.461+0100">
+    <containingElement elementType="to" elementName=""/>
+    <attribute attributeName="variable" oldValue="" newValue="InventoryServicePLRequest1"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:49.141+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <newElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:49.150+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:49.159+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:49.169+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:49.169+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="from" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:15:49.176+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-14T22:15:49.176+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <newElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.612+0100">
+    <parentElement elementType="sequence" elementName="Availability" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]"/>
+    <oldElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.612+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.612+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="to" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.612+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.612+0100">
+    <parentElement elementType="assign" elementName="Assign" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]"/>
+    <oldElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.614+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="to" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/to[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-14T22:16:05.614+0100">
+    <parentElement elementType="copy" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[2]"/>
+    <oldElement elementType="from" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/assign[1]/copy[1]/from[1]"/>
+  </modelChange>
 </bplog:Log>
