@@ -10116,4 +10116,84 @@
     <parentElement elementType="receive" elementName="Receive" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]"/>
     <oldElement elementType="correlations" elementName=""/>
   </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:02:27.403+0100">
+    <parentElement elementType="receive" elementName="Receive" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]"/>
+    <newElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:02:27.450+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <newElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-15T08:15:14.951+0100">
+    <containingElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]/correlations[1]/correlation[1]"/>
+    <attribute attributeName="initiate" oldValue="no" newValue="yes"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:31:52.518+0100">
+    <parentElement elementType="invoke" elementName="Invoke" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]"/>
+    <newElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:31:52.548+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <newElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-15T08:32:01.354+0100">
+    <containingElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+    <attribute attributeName="initiate" oldValue="no" newValue="yes"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-15T08:32:26.776+0100">
+    <containingElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]/correlations[1]/correlation[1]"/>
+    <attribute attributeName="initiate" oldValue="yes" newValue="no"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-15T08:36:09.028+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <oldElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-15T08:36:09.039+0100">
+    <parentElement elementType="receive" elementName="Receive" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]"/>
+    <oldElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-15T08:36:14.485+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <oldElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-15T08:36:14.500+0100">
+    <parentElement elementType="invoke" elementName="Invoke" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]"/>
+    <oldElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:36:20.707+0100">
+    <parentElement elementType="invoke" elementName="Invoke" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]"/>
+    <newElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:36:20.724+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <newElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-15T08:36:40.539+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <oldElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementRemoved" timestamp="2016-12-15T08:36:40.554+0100">
+    <parentElement elementType="invoke" elementName="Invoke" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]"/>
+    <oldElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:36:43.759+0100">
+    <parentElement elementType="invoke" elementName="Invoke" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]"/>
+    <newElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:36:43.776+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <newElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:ValueChange" changeReason="AttributeChanged" timestamp="2016-12-15T08:36:46.796+0100">
+    <containingElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/invoke[1]/correlations[1]/correlation[1]"/>
+    <attribute attributeName="initiate" oldValue="no" newValue="yes"/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:41:09.566+0100">
+    <parentElement elementType="receive" elementName="Receive" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]"/>
+    <newElement elementType="correlations" elementName=""/>
+  </modelChange>
+  <modelChange xsi:type="bplog:StructuralChange" changeReason="ElementAdded" timestamp="2016-12-15T08:41:09.576+0100">
+    <parentElement elementType="correlations" elementName=""/>
+    <newElement elementType="correlation" elementName="" elementXPath="/process/sequence[1]/flow[1]/scope[1]/sequence[1]/receive[1]/correlations[1]/correlation[1]"/>
+  </modelChange>
 </bplog:Log>
