@@ -1,0 +1,28 @@
+<tns:conductorderRequest xmlns:tns="julz.babis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tns:input>
+    <tns:orderID>t21</tns:orderID>
+    <tns:customerID>2121</tns:customerID>
+    <tns:products>
+      <tns:product>
+        <tns:productID>1d1d5dcf-de65-44d7-bda3-7a25ee222bde 
+        </tns:productID>
+      <tns:product>
+        <tns:productID>08de18f0-1965-4a37-a940-7237deb0235f
+      </tns:productID>
+        <tns:amount>2</tns:amount>
+        <tns:isAvailable>tns:isAvailable</tns:isAvailable>
+      </tns:product>
+    </tns:products>
+    <tns:shippingInfo>
+      <tns:shippingAddress>los angeles</tns:shippingAddress>
+      <tns:date>tns:date</tns:date>
+    </tns:shippingInfo>
+    <tns:paymentDetails>
+      <tns:bankName>bank of julz</tns:bankName>
+      <tns:bankAddress>suset bullevard strip</tns:bankAddress>
+      <tns:accountNumber>1234</tns:accountNumber>
+      <tns:accountHolderName>julz</tns:accountHolderName>
+    </tns:paymentDetails>
+    <tns:status>tns:status</tns:status>
+  </tns:input>
+</tns:conductorderRequest>
