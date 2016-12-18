@@ -22,7 +22,7 @@
   </extensions>
   <extensions>
     <extendedObject href="conductorder.bpel#/"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1481787671000" processName="{julz.babis}conductorder" processVersion="3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1481809601000" processName="{julz.babis}conductorder" processVersion="4"/>
   </extensions>
   <extensions>
     <extendedObject href="conductorder.bpel#//@activity/@activities.1/@activities.1/@activity/@activities.0"/>
@@ -316,7 +316,7 @@
   </extensions>
   <extensions>
     <extendedObject href="conductorder.bpel#//@activity/@activities.1/@activities.0"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension" x="2" y="3" width="-1" height="-1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension" x="73" y="5" width="-1" height="-1"/>
   </extensions>
   <extensions>
     <extendedObject href="conductorder.bpel#//@activity/@activities.1/@activities.1"/>

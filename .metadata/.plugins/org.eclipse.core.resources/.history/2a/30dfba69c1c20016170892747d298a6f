@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="julz.babis" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:wsdl="http://iaas.uni-stuttgart.de/labs/FlowSOG" name="conductorder" targetNamespace="julz.babis">
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     TYPE DEFINITION - List of types participating in this BPEL process 
+     The BPEL Designer will generate default request and response types
+     but you can define or import any XML Schema type and use them as part 
+     of the message types.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <plnk:partnerLinkType name="InventoryServicePL">
+    <plnk:role name="InventoryServicePLRole" portType="wsdl:InventoryPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="OrderServicePL">
+    <plnk:role name="OrderServicePLRole" portType="wsdl:OrderPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="ShipmentServicePL">
+    <plnk:role name="ShipmentServicePLRole" portType="wsdl:ShipmentPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="PaymentServicePL">
+    <plnk:role name="PaymentServicePLRole" portType="wsdl:PaymentPortType"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="CancelOrderPL">
+    <plnk:role name="CancelOrderPLRole" portType="wsdl:OrderPortType"/>
+  </plnk:partnerLinkType>
+    <import location="bpmlab16.wsdl" namespace="http://iaas.uni-stuttgart.de/labs/FlowSOG"/>
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="julz.babis">
+
+            <element name="conductorderRequest">
+                <complexType>
+                    <sequence>
+                        <element name="input" type="tns:orderInput"/>
+                    </sequence>
+                </complexType>
+            </element>
+            
+            <element name="OrderCosts">
+                <complexType>
+                    <sequence>
+                        <element name="input" type="decimal"/>
+                    </sequence>
+                </complexType>
+            </element>
+            
+            <element name="ShipmentCosts">
+                <complexType>
+                    <sequence>
+                        <element name="input" type="decimal"/>
+                    </sequence>
+                </complexType>
+            </element>
+            
+            <element name="PaymentCosts">
+                <complexType>
+                    <sequence>
+                        <element name="input" type="decimal"/>
+                    </sequence>
+                </complexType>
+            </element>
+            
+            <element name="Costs">
+                <complexType>
+                    <sequence>
+                        <element name="PaymentCosts" type="decimal"/>
+                        <element name="ShipmentCosts" type="decimal"/>
+                        <element name="OrderCosts" type="decimal"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+			<complexType name="orderInput">
+			        <sequence>
+			          <element name="orderID" type="string"/>
+			          <element name="customerID" type="string"/>
+			          <element name="products">
+				          <complexType>
+					          <sequence>
+					          	<element name="product">
+					            	<complexType>
+							            <sequence>
+						          			<element name="productID" type="string"/>
+						          			<element name="amount" type="string"/>
+						          			<element name="isAvailable" type="string"/>
+						          		</sequence>	
+					            	</complexType>
+					            </element>	
+					          </sequence>	      
+				          </complexType>
+			          </element>
+			          <element name="shippingInfo">
+			          	<complexType>
+			          		<sequence>
+			          			<element name="shippingAddress" type="string"/>
+			          			<element name="date" type="string"/>
+			          		</sequence>
+			          	</complexType>
+			          </element>
+			          <element name="paymentDetails">
+			          	<complexType>
+			          		<sequence>
+			          			<element name="bankName" type="string"/>
+			          			<element name="bankAddress" type="string"/>
+			          			<element name="accountNumber" type="string"/>
+			          			<element name="accountHolderName" type="string"/>
+			          		</sequence>
+			          	</complexType>
+			          </element>
+			          <element name="status" type="string"/>
+			        </sequence>
+			        <anyAttribute/>
+                </complexType>
+
+            <element name="conductorderResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="string"/>
+                        <element name="shipment" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
+    </types>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     MESSAGE TYPE DEFINITION - Definition of the message types used as 
+     part of the port type defintions
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <message name="conductorderRequestMessage">
+        <part element="tns:conductorderRequest" name="payload"/>
+    </message>
+    <message name="conductorderResponseMessage">
+        <part element="tns:conductorderResponse" name="payload"/>
+    </message>
+    <message name="CostsMessage">
+        <part element="tns:Costs" name="toPay"/>
+    </message>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PORT TYPE DEFINITION - A port type groups a set of operations into
+     a logical service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+
+    <!-- portType implemented by the conductorder BPEL process -->
+    <portType name="conductorder">
+        <operation name="process">
+            <input message="tns:conductorderRequestMessage"/>
+            <output message="tns:conductorderResponseMessage"/>
+        </operation>
+    </portType>   
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PARTNER LINK TYPE DEFINITION
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <plnk:partnerLinkType name="conductorder">
+        <plnk:role name="conductorderProvider" portType="tns:conductorder"/>
+    </plnk:partnerLinkType>
+    
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     BINDING DEFINITION - Defines the message format and protocol details
+     for a web service.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <binding name="conductorderBinding" type="tns:conductorder">
+    	<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    	<operation name="process">
+    		<soap:operation soapAction="julz.babis/process"/>
+    		<input>
+    			<soap:body use="literal"/>
+    		</input>
+    		<output>
+    			<soap:body use="literal"/>
+    		</output>
+    	</operation>
+    </binding>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     SERVICE DEFINITION - A service groups a set of ports into
+     a service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <service name="conductorderService">
+    	<port binding="tns:conductorderBinding" name="conductorderPort">
+    		<soap:address location="http://localhost:8080/ode/processes/conductorder"/>
+    	</port>
+    </service>
+</definitions>

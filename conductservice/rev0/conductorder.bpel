@@ -429,9 +429,10 @@
         </bpel:if>
         
         <bpel:invoke name="MakeCustomerHappy" partnerLink="ShipmentServicePL" operation="shipProducts" portType="ns:ShipmentPortType" inputVariable="ShipmentServicePLRequest1" outputVariable="ShipmentServicePLResponse1"></bpel:invoke>
-        <bpel:assign validate="no" name="AssignDetails">
-            
-            
+        
+        
+        
+        <bpel:assign validate="no" name="result">
             <bpel:copy>
                 <bpel:from><bpel:literal><tns:conductorderResponse xmlns:tns="julz.babis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <tns:result>tns:result</tns:result>
@@ -448,7 +449,6 @@
                 </bpel:to>
             </bpel:copy>
         </bpel:assign>
-        
         <bpel:reply name="replyOutput" partnerLink="client" portType="tns:conductorder" operation="process" variable="output" />
     </bpel:sequence>
 </bpel:process>

@@ -2,7 +2,7 @@
 <deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:FlowSOG="http://iaas.uni-stuttgart.de/labs/FlowSOG" xmlns:julz.babis="julz.babis">
   <process name="julz.babis:conductorder">
     <metaData>
-      <mdProperty name="version" value="3"/>
+      <mdProperty name="version" value="5"/>
     </metaData>
     <active>true</active>
     <retired>false</retired>
@@ -10,10 +10,7 @@
     <provide partnerLink="client">
       <service name="julz.babis:conductorderService" port="conductorderPort"/>
     </provide>
-    <provide partnerLink="inventoryCallbackPL">
-      <service name="FlowSOG:InventoryCallbackService" port="InventoryCallbackPort"/>
-    </provide>
-    <provide partnerLink="CallbackLT">
+    <provide partnerLink="callbackPL">
       <service name="FlowSOG:InventoryCallbackService" port="InventoryCallbackPort"/>
     </provide>
     <invoke partnerLink="InventoryServicePL">

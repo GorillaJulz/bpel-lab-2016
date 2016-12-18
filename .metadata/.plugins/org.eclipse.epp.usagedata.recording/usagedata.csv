@@ -1,26 +1,51 @@
 what,kind,bundleId,bundleVersion,description,time
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787407932
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787408107
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1481787408124
-activated,editor,org.eclipse.bpel.ui,0.8.0.201509221212,"org.eclipse.bpel.ui.bpeleditor",1481787419530
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787431173
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787443108
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787457759
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787474663
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787479377
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787481566
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787484295
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787489248
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787495755
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787495872
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1481787495891
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1481787502292
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787503124
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787503252
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1481787503268
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787504880
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787510481
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787520196
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787659903
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787660528
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1481787662172
+started,bundle,org.eclipse.xsd,2.6.0.v20100914-1218,"org.eclipse.xsd",1482077798082
+started,bundle,FragmentoRCP,1.0.3.201509221212,"FragmentoRCP",1482077798082
+started,bundle,de.unistuttgart.iaas.abstractConstructs.staticFragmento.model,1.0.0.201509221212,"de.unistuttgart.iaas.abstractConstructs.staticFragmento.model",1482077798083
+started,bundle,de.unistuttgart.iaas.abstractConstructs.staticFragmento.ui,1.0.0.201509221212,"de.unistuttgart.iaas.abstractConstructs.staticFragmento.ui",1482077798084
+started,bundle,de.unistuttgart.iaas.bpel.extensions.model,1.0.0.201509221212,"de.unistuttgart.iaas.bpel.extensions.model",1482077798084
+started,bundle,de.unistuttgart.iaas.bpel.extensions.ui,1.0.0.201509221212,"de.unistuttgart.iaas.bpel.extensions.ui",1482077798084
+started,bundle,org.eclipse.bpel.common.model,0.8.0.201509221212,"org.eclipse.bpel.common.model",1482077798085
+started,bundle,org.eclipse.bpel.common.ui,0.8.0.201509221212,"org.eclipse.bpel.common.ui",1482077798086
+started,bundle,org.eclipse.bpel.debug,1.0.0.201509221212,"org.eclipse.bpel.debug",1482077798086
+started,bundle,org.eclipse.bpel.model,0.8.0.201509221212,"org.eclipse.bpel.model",1482077798087
+started,bundle,org.eclipse.bpel.model.logging,1.0.0.201509221212,"org.eclipse.bpel.model.logging",1482077798088
+started,bundle,org.eclipse.bpel.runtimes,0.8.0.201509221212,"org.eclipse.bpel.runtimes",1482077798088
+started,bundle,org.eclipse.bpel.simpl.model,0.1.2.201509221212,"org.eclipse.bpel.simpl.model",1482077798089
+started,bundle,org.eclipse.bpel.simpl.ui,0.1.4.201509221212,"org.eclipse.bpel.simpl.ui",1482077798090
+started,bundle,org.eclipse.bpel.simtech.extensions.model,0.0.1.201509221212,"org.eclipse.bpel.simtech.extensions.model",1482077798090
+started,bundle,org.eclipse.bpel.simtech.extensions.ui,0.0.1.201509221212,"org.eclipse.bpel.simtech.extensions.ui",1482077798091
+started,bundle,org.eclipse.bpel.ui,0.8.0.201509221212,"org.eclipse.bpel.ui",1482077798093
+started,bundle,org.eclipse.bpel.wsil.model,0.8.0.201509221212,"org.eclipse.bpel.wsil.model",1482077798093
+started,bundle,org.eclipse.jem,2.0.402.v201106132000,"org.eclipse.jem",1482077798094
+started,bundle,org.eclipse.jem.workbench,2.0.301.v201104271300,"org.eclipse.jem.workbench",1482077798095
+started,bundle,org.eclipse.jst.j2ee,1.1.406.v201110130300,"org.eclipse.jst.j2ee",1482077798096
+started,bundle,org.eclipse.jst.j2ee.core,1.2.7.v201110060300,"org.eclipse.jst.j2ee.core",1482077798098
+started,bundle,org.eclipse.jst.jsp.core,1.2.308.v201109202150,"org.eclipse.jst.jsp.core",1482077798099
+started,bundle,org.eclipse.jst.jsp.ui,1.1.505.v201110211728,"org.eclipse.jst.jsp.ui",1482077798101
+started,bundle,org.eclipse.simpl.communication,0.1.0.201509221212,"org.eclipse.simpl.communication",1482077798102
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.4.v201106210700,"org.eclipse.wst.common.emfworkbench.integration",1482077798103
+started,bundle,org.eclipse.wst.common.frameworks,1.2.1.v201107271600,"org.eclipse.wst.common.frameworks",1482077798104
+started,bundle,org.eclipse.wst.common.modulecore,1.2.7.v201110060300,"org.eclipse.wst.common.modulecore",1482077798105
+started,bundle,org.eclipse.wst.sse.core,1.1.506.v201110201853,"org.eclipse.wst.sse.core",1482077798106
+started,bundle,org.eclipse.wst.sse.ui,1.2.5.v201108191505,"org.eclipse.wst.sse.ui",1482077798107
+started,bundle,org.eclipse.wst.validation,1.2.204.v201109220700,"org.eclipse.wst.validation",1482077798107
+started,bundle,org.eclipse.wst.web,1.1.403.v201103081400,"org.eclipse.wst.web",1482077798107
+started,bundle,org.eclipse.wst.wsdl,1.2.105.v201108291616,"org.eclipse.wst.wsdl",1482077798108
+started,bundle,org.eclipse.wst.xml.core,1.1.505.v201109271810,"org.eclipse.wst.xml.core",1482077798110
+started,bundle,org.eclipse.wst.xml.ui,1.1.105.v201106142156,"org.eclipse.wst.xml.ui",1482077798111
+started,bundle,org.eclipse.wst.xsd.ui,1.2.305.v201104132127,"org.eclipse.wst.xsd.ui",1482077798114
+os,sysinfo,,,"macosx",1482077798118
+arch,sysinfo,,,"x86_64",1482077798118
+ws,sysinfo,,,"cocoa",1482077798118
+locale,sysinfo,,,"de_DE",1482077798118
+processors,sysinfo,,,"4",1482077798118
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1482077798118
+java.runtime.version,sysinfo,,,"1.6.0_65-b14-468-11M4833",1482077798118
+java.specification.name,sysinfo,,,"Java Platform API Specification",1482077798118
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1482077798118
+java.specification.version,sysinfo,,,"1.6",1482077798118
+java.vendor,sysinfo,,,"Apple Inc.",1482077798118
+java.version,sysinfo,,,"1.6.0_65",1482077798118
+java.vm.info,sysinfo,,,"mixed mode",1482077798118
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1482077798118

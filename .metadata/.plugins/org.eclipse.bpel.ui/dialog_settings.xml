@@ -13,7 +13,7 @@
 	<section name="org.eclipse.bpel.ui.wizards.CreatePartnerLinkWizard">
 	</section>
 	<section name="org.eclipse.bpel.ui.wizards.NewBpelFileWizard">
-		<item value="conduct-async" key="process-name"/>
+		<item value="" key="process-name"/>
 	</section>
 	<section name="org.eclipse.bpel.ui.dialogs.TypeSelectorDialog">
 		<item value="472" key="DIALOG_WIDTH"/>
